@@ -60,6 +60,7 @@ GROUP BY Operator, factors;
 ```
 
 ### Final Dashboard
+View the dashboard here: https://public.tableau.com/app/profile/abimbola.ajayi8433/viz/ManufacturingDowntime_17329293557390/DowntimeDashboard
 
 
 ![Downtime Dashboard](https://github.com/user-attachments/assets/b514b053-c7cc-494a-9a9b-d706fce2b0f8)
