@@ -3,6 +3,7 @@
 ## Table of Content
 - [Objective](#objective)
 - [Goals](#goals)
+- [Data Source](#data-source)
 - [Solutions Delivered](#solutions-delivered)
 - [Exploratory Data Analysis with SQL](#exploratory-data-analysis-with-sql)
 - [Final Dashboard](#final-dashboard)
@@ -18,14 +19,16 @@ The goal is to provide actionable insights into the operational efficiency of th
 2.	Evaluate Operator Performance: Identify underperforming operators and analyze whether there is a correlation between operator experience and downtime or production delays.
 3.	Analyze Downtime Factors: Identify and categorize the leading causes of downtime (e.g., mechanical failures, maintenance issues, material shortages, or operator errors) to prioritize corrective actions.
 4.	Investigate Operator Error Trends: Determine if certain operators are prone to specific errors and provide targeted training or process improvements to reduce mistakes.
+
+### Data Source
+The primary data set used for this analysis is an Excel file containing detailed information about a soda manufacturing downtime details which include different varaibles such as the operators, factors leading to their downtime, their start and end time and their batches of production.
+
 ### Solutions Delivered
-STEP 1: Created a mock up question that the dashboard will be answering
+Created a mock up question that the dashboard will be answering
 1.	What's the current line efficiency? (total time / min time)
 2.	Are any operators underperforming?
 3.	What are the leading factors for downtime?
 4.	Do any operators struggle with types of operator error?
-
-STEP 2: Accessed data for quality and completeness in preparation for analysis
 
 ### Exploratory Data Analysis with SQL
 
