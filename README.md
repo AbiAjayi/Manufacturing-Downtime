@@ -19,3 +19,28 @@ STEP 2: Accessed data for quality and completeness in preparation for analysis
 
 STEP 3: Conducted exploratory data analysis on the data with SQL
 
+```sql
+
+-- To find the current line efficiency by accessing the Minimum batch time against the production time
+
+SELECT pp.Flavor,p.operator,p.Minbatchtime,Elapsetime
+FROM productivity p
+JOIN products pp ON
+p.product_id=pp.product_id
+WHERE Timediff_minutes>Minbatchtime;
+```
+
+```sql
+
+-- Operators downtime and factors behind it
+
+WITH CTE AS 
+			(SELECT p.Operator, factors, f.Operator_Error,Timediff_minutes,Minbatchtime,p.Batch
+				FROM Productivity p
+					JOIN factors f ON 
+						p.Batch=f.Batch
+							WHERE Timediff_minutes>Minbatchtime
+								AND Operator_Error='yes')
+SELECT Operator, factors,COUNT(factors)
+FROM CTE
+GROUP BY Operator, factors;
