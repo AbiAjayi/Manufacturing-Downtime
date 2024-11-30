@@ -58,6 +58,9 @@ GROUP BY Operator, factors;
 
 ### Final Dashboard
 
+
+![Downtime Dashboard](https://github.com/user-attachments/assets/b514b053-c7cc-494a-9a9b-d706fce2b0f8)
+
 ### Business Insights
 
 The production of soda is influenced by several factors, leading to downtime during operations. A total of 12 distinct factors contribute to this downtime, which are primarily divided into operator-related issues and mechanical or external causes. The production process involves four operators, each of whom encountered downtime due to different factors. The key insights observed are as follows:
