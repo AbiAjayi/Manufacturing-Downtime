@@ -1,4 +1,14 @@
 # Manufacturing-Downtime
+
+## Table of Content
+- [Objective](#objective)
+- [Goals](#goals)
+- [Solutions Delivered](#solutions-delivered)
+- [Exploratory Data Analysis with SQL](#exploratory-data-analysis-with-sql)
+- [Final Dashboard](#final-dashboard)
+- [Business Insights](#business-insights)
+- [Recommendations](recommendations)
+  
 ## Manufacturing Downtime Analysis
 ### Objective
 The primary objective of this project is to gather, analyze, and interpret detailed productivity and downtime data from the soda bottling production line. By tracking key metrics such as operator performance, product type, start and end times for each batch, and downtime causes, the goal is to identify inefficiencies, bottlenecks, and areas for improvement in the production process. This will help optimize production scheduling, reduce downtime, improve operator performance, and ultimately enhance overall productivity on the production line.
@@ -17,7 +27,7 @@ STEP 1: Created a mock up question that the dashboard will be answering
 
 STEP 2: Accessed data for quality and completeness in preparation for analysis
 
-STEP 3: Conducted exploratory data analysis on the data with SQL
+### Exploratory Data Analysis with SQL
 
 ```sql
 
@@ -46,7 +56,7 @@ FROM CTE
 GROUP BY Operator, factors;
 ```
 
-STEP 4: Created Final Dashboard
+### Final Dashboard
 
 ### Business Insights
 
@@ -65,7 +75,7 @@ Key Problem Areas:
 - Machine Failures and Inventory Shortages: These issues are external to the operators but significantly impacted overall production efficiency.
 - Batch Coding and Product Spills: These were common operator errors, particularly with Charlie, Dee, and Dennis.
 
-### Recommendation
+### Recommendations
 - Improve Machine Adjustment Protocols: Conduct a detailed review of machine adjustment procedures to identify root causes of frequent machine adjustment errors, particularly for Charlie, Dennis, and Dee. Training or standardization of adjustment processes should be implemented to reduce the frequency of these issues.
 Consider introducing a checklist or automated adjustment system to guide operators in performing accurate machine adjustments, especially for those facing recurrent issues.
 - Enhanced Operator Training and Support: Focus on providing additional training to Charlie, Dennis, and Dee in areas related to batch coding and product spill prevention. Special attention should be given to Charlie and Dee’s recurring batch coding errors, and Mac should be supported in improving his batch change efficiency.
